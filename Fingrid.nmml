@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+
+  <app
+     file="Fingrid"
+     title="Fingrid"
+     package="org.cobrajs.Fingrid"
+     version="1.0.0"
+     company="nme" 
+     main="Main"
+     description=""
+     category="Game"
+  />
+
+  <window
+     width="0" 
+     height="0" 
+		 orientation="potrait" 
+		 fps="60"
+		 background="0xffffff"
+     resizable="true"
+		 hardware="true"
+	/>
+
+  <window width="480" height="640" resizable="false" unless="mobile" />
+
+  <set name="BUILD_DIR" value="bin" />
+  
+  <source path="src" />
+  
+  <assets path="assets" rename="assets" include="*" exclude="nme.svg" />
+  
+  <assets path="assets/sounds" rename="assets/sounds" type="sound" include="*"/>
+  
+  <haxelib name="nme" />
+  <haxelib name="cobraui" />
+  <!-- <icon name="icon.svg" /> -->
+
+  <ndll name="std" />
+  <ndll name="regexp" />
+  <ndll name="zlib" />
+  <ndll name="nme" haxelib="nme" />
+
+</project>
